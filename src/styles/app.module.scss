@@ -1,0 +1,81 @@
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+
+    @media (max-width: 700px) {
+        padding: 1rem 5px;
+    }
+}
+
+.center {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card,
+.loader {
+    border: 1px solid var(--main-color);
+    border-radius: 5px;
+    background: var(--white);
+    padding: .5rem;
+    height: fit-content;
+    margin-top: 5rem;
+
+    @media (max-width: 700px) {
+        margin-top: 2rem;
+    }
+}
+
+.data {
+    margin-top: 0;
+}
+
+.loader {
+    margin-top: 0;
+    background: transparent;
+    justify-content: center;
+    border: none;
+    display: flex;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    gap: .5rem;
+    flex-direction: column;
+}
+
+.section {
+    display: flex;
+}
+
+.input {
+    width: 100%;
+    border: none;
+    outline: 1px solid var(--main-color-light);
+    padding: 1rem;
+
+    &:focus {
+        outline: 1px solid var(--main-color-dark);
+    }
+}
+
+.button {
+    outline: 1px solid var(--main-color-light);
+    background: var(--main-color-light);
+    color: var(--white);
+    cursor: pointer;
+    padding: 1rem;
+    border: none;
+
+    &:active {
+        transform: scale(1.05);
+        background: var(--main-color-dark);
+        outline: 1px solid var(--main-color-dark);
+    }
+}
